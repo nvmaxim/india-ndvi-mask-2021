@@ -11,10 +11,15 @@
 
 ## Как использовать
 
-1. Установите библиотеки [gdal](https://pypi.org/project/GDAL/) и [numpy](https://numpy.org/).
+1. Установите библиотеки [GDAL](https://pypi.org/project/GDAL/) (из osgeo) и [numpy](https://numpy.org/):
+
+   ```bash
+   pip install GDAL numpy
+   ```
+
 2. Подготовьте стек NDVI (GeoTIFF с несколькими слоями по датам).
 3. Запустите скрипт:
-   ```
+   ```bash
    python ndvi_mask.py NDVIStack_FILENAME.tif
    ```
 4. На выходе получится файл `NDVIStack_FILENAME_Mask.tif` с бинарной маской.
