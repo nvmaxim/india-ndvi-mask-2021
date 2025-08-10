@@ -14,7 +14,7 @@
 1. Установите библиотеки [GDAL](https://pypi.org/project/GDAL/) (из osgeo) и [numpy](https://numpy.org/):
 
    ```bash
-   pip install GDAL numpy
+   pip install osgeo /// from osgeo import gdal
    ```
 
 2. Подготовьте стек NDVI (GeoTIFF с несколькими слоями по датам).
